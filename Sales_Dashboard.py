@@ -4,6 +4,8 @@ import plotly.express as px
 
 # Load and parse dates correctly
 df = pd.read_csv("Train.csv")
+st.write("Columns in dataset:", df.columns.tolist())
+
 df['Order Date'] = df['Order Date'].astype(str).str.strip()
 df['Order Date'] = pd.to_datetime(df['Order Date'], dayfirst=True)
 
