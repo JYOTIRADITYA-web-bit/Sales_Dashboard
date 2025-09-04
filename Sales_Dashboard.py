@@ -78,4 +78,6 @@ if not filtered_df.empty:
                             x='Region', y='Sales', title="Sales by Region")
         st.plotly_chart(fig_region, use_container_width=True)
 else:
-    st.warning("⚠️ No data available for selected filters.")
+
+   
+ 
